@@ -1,0 +1,91 @@
+
+
+<section class="h-100 gradient-custom-2">
+
+  <div class="container py-5 h-100">
+    <h1><b>Add User</b></h1>
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-9 col-xl-7">
+        <div class="card-body">
+          <div class="rounded-top text-white d-flex flex-row"
+          style="background-image:url(https://www.bing.com/images/search?view=detailV2&ccid=PzTM8UVG&id=C6B629CE8AC321442D8D6A41591C08D12D29B691&thid=OIP.PzTM8UVGuJvAvditnPZYrQHaEo&mediaurl=https%3a%2f%2fwww.hdwallpapers.in%2fdownload%2fplanet_view-wide.jpg&exph=1200&expw=1920&q=planets+images+hd&simid=607991937190549607&FORM=IRPRST&ck=2857FCBD3D92CA28BB4E33996F659842&selectedIndex=10)
+          rgba(205, 170, 170, 0.255); height: 200px;">
+            <div class="ms-4 mt-5 d-flex flex-column">
+
+              <img src=""
+                alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2"
+                style="width: 150px; z-index: 1">
+
+              <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
+                style="z-index: 1;">
+                Change Profile
+              </button>
+            </div>
+            <div class="ms-3" style="margin-top: 150px;">
+              <h5>Profile Image</h5>
+
+            </div>
+          </div>
+          <div class="p-4 text-black" style="background-color: #ffffff00;">
+            <div class="d-flex justify-content-end text-center py-1">
+    </div>
+    <div>
+      <form [formGroup]="signupform">
+      <div class="row mt-2">
+        <div class="col-md-6"><label>Name</label><input type="text" class="form-control" placeholder="Firstname" formControlName="firstname"></div>
+        <div class="col-md-6"><label>Name</label><input type="text" class="form-control" placeholder="Lastname" formControlName="lastname"></div>
+    </div>
+
+    <div>
+      <div class="row mt-2">
+        <div class="col-md-6"><label>Phone</label><input type="text" class="form-control" placeholder="Enter Number" formControlName="phonenumber"></div>
+        <div class="col-md-6"><label>Address</label><input type="text" class="form-control" placeholder="Enter Address" formControlName="address"></div>
+    </div>
+
+    <div>
+      <div class="row mt-2">
+        <div class="col-md-6"><label>Email</label><input type="text" class="form-control" placeholder="Enter Email" formControlName="email"></div>
+        <div class="col-md-6"><label>MapAddressLink</label><input type="text" class="form-control" placeholder="Enter MapAddressLink" formControlName="mapaddresslink"></div>
+    </div>
+
+    <div>
+      <div class="row mt-2">
+        <div class="col-md-6"><label>UserName</label><input type="text" class="form-control" placeholder="Enter" formControlName="username"></div>
+        <div class="col-md-6"><label>Password</label><input type="text" class="form-control" placeholder="Enter" formControlName="password"></div>
+    </div><br>
+
+
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+      <select class="form-select"aria-label="default select example" formControlName="userisadmin">
+        <option selected>Is Admin</option>
+        <option value="1">Y</option>
+        <option value="2">N</option>
+      </select><br>
+
+    <div class="col-md-6 mb-4">
+     <div class="form-outline">
+      <select class="form-select"aria-label="default select example" formControlName="usertype">
+      <option selected> Usertype</option>
+      <option value="1">Admin</option>
+      <option value="2">User</option>
+   </select><br>
+
+
+    <button  id="n" type = "button" class="btn btn-secondary" (click)="saveuser()"> confirm</button>
+
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>

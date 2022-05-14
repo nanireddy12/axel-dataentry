@@ -1,0 +1,41 @@
+<body>
+
+<div class="container">
+    <div class="row col-md-4 col-md-offset-10 custyle">
+      <h1>View Users </h1>
+    <table class="table table-striped custab">
+      <thead>
+
+        <tr>
+            <th>User ID</th>
+            <th>User firstname</th>
+            <th>User lastname</th>
+            <th>mobile No.</th>
+            <th>email</th>
+            <th>Address</th>
+            <th>Mapaddresslink</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+            <tr *ngFor="let list of a | paginate: { itemsPerPage: 5, currentPage: p }">
+                <td>{{list.user_Id}}</td>
+                <td>{{list.user_Firstname}}</td>
+                <td>{{list.user_Lastname}}</td>
+                <td>{{list.user_Phone}}</td>
+                <td>{{list.user_Email}}</td>
+                <td>{{list.user_Address}}</td>
+                <td>{{list.user_Mapaddresslink}}</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#">
+                  <span class="glyphicon glyphicon-edit"></span> Edit</a>
+                   <a href="#" class="btn btn-danger btn-xs">
+                     <span class="glyphicon glyphicon-remove"></span> Del</a>
+                    </td>
+            </tr>
+
+    </table>
+    <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+    </div>
+</div>
+
+
+</body>

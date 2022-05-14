@@ -1,0 +1,14 @@
+
+.gradient-custom-2 {
+
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(253, 202, 0), rgb(244, 0, 0));
+
+
+  background: linear-gradient(to right, rgb(65, 69, 130), rgb(49, 119, 93))
+  }
+
+ #n {
+  margin-left: 200px;
+ }
